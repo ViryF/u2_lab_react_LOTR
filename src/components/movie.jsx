@@ -1,10 +1,10 @@
 // const Movie = ({fellowship, towers, king}) => {
-const Movie = (props) => {
+const Movie = ({movies}) => {
 
   return (
     <div>
       {
-      props.movies?.map((movie) =>(
+      movies?.map((movie) =>(
         <div className="movie-card" key={movie.id}>
           <h1>{movie.title}</h1>
           <p>Runtime: {movie.hours}: {movie.minutes}</p>
