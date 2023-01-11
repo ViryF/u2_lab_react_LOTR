@@ -2,6 +2,8 @@ import './App.css'
 import Movie from './components/movie'
 
 const App = () => {
+  /////////// MOVIES AS OBJECTS
+
   // const fellowship = {
   //   title: 'The Fellowship of the Ring',
   //   hours: 2,
@@ -26,6 +28,9 @@ const App = () => {
   //     'https://image.tmdb.org/t/p/original/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg'
   // }
 
+  /////////// MOVIES AS OBJECTS
+
+  /////////// MOVIES AS ARRAY OF OBJECTS
   const movies = [
     {
       title: 'The Fellowship of the Ring',
@@ -49,6 +54,7 @@ const App = () => {
         'https://image.tmdb.org/t/p/original/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg'
     }
   ]
+  /////////// MOVIES AS ARRAY OF OBJECTS
 
   return (
     <div className="App">
@@ -57,7 +63,9 @@ const App = () => {
       </header>
       <main>
         <Movie movies={movies} />
+        {/* PASSING ARRAY OF MOVIES */}
         {/* <Movie fellowship={fellowship} towers={towers} king={king} /> */}
+        {/* PASSING EACH OBJECT */}
       </main>
     </div>
   )
