@@ -7,7 +7,7 @@ const Movie = ({movies}) => {
       movies?.map((movie) =>(
         <div className="movie-card" key={movie.id}>
           <h1>{movie.title}</h1>
-          <p>Runtime: {movie.hours}: {movie.minutes}</p>
+          <p>Runtime: {movie.hours}:{movie.minutes}</p>
           <img src={movie.poster} alt="poster" />
         </div>
       ))}
